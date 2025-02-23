@@ -8,7 +8,7 @@ A simple responsive website for a creative agency made with HTML/CSS.
 - **Responsive website**
 
 ## Screenshots
-<p>
+<p align=center>
 <img src="screenshots/lumina-creative-home.png" alt="Lumina Creative Home" width="300" height="auto">
 <img src="screenshots/lumina-creative-about.png" alt="Lumina Creative Home" width="300" height="400">
 <img src="screenshots/lumina-creative-contact.png" alt="Lumina Creative Home" width="300" height="400">
