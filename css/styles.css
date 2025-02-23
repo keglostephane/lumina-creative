@@ -101,7 +101,8 @@ nav {
 }
 
 .hero .highlight {
-  background-color: var(--hl-color);
+	background-color: var(--hl-color);
+	padding: 0 var(--pd-md);
 }
 
 /* Photo Gallery */
