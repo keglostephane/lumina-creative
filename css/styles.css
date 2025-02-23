@@ -1,0 +1,293 @@
+/* CSS Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Custom Variable */
+:root {
+  /* Margin */
+  --mg-sm: 8px;
+  --mg-md: 16px;
+  --mg-lg: 24px;
+  --mg-xl: 48px;
+  /* Padding */
+  --pd-sm: 5px;
+  --pd-md: 10px;
+  --pd-lg: 15px;
+  /* Gap */
+  --gp-sm: 10px;
+  --gp-md: 20px;
+  --gp-lg: 30px;
+  /* Highlight Color */
+  --hl-color: #faede1;
+  /* Background Color */
+  --bg-dark: #2c2c2c;
+  --bg-light: white;
+}
+
+/* General Styles */
+body {
+  font-family: "Open Sans", serif;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* margin: var(--mg-md) var(--mg-lg); */
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-around;
+  padding: var(--pd-md);
+  margin-bottom: var(--mg-md);
+}
+
+/* Logo */
+.logo img {
+  width: 150px;
+}
+
+/* Menu Links */
+.menu {
+  list-style: none;
+}
+
+.menu li {
+  display: inline-block;
+  font-size: 1.5rem;
+  margin-right: var(--mg-md);
+}
+
+.menu li a {
+  text-decoration: none;
+  color: black;
+  padding: var(--pd-sm) var(--pd-md);
+}
+
+.menu li a:hover,
+.active {
+  background: var(--hl-color);
+}
+
+/* Header Hero */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 40vh;
+  padding: var(--pd-md);
+  /* margin-bottom: var(--mg-md); */
+}
+
+#hero-contact {
+  background-color: var(--bg-dark);
+  color: white;
+  width: 100%;
+}
+
+#hero-contact span {
+  color: black;
+}
+
+.hero p {
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+.hero .highlight {
+  background-color: var(--hl-color);
+}
+
+/* Photo Gallery */
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--gp-sm);
+  margin-top: var(--mg-lg);
+  margin-bottom: var(--mg-lg);
+}
+
+.photo img {
+  border-radius: 5px;
+  width: 350px;
+}
+
+.photo img:hover {
+	opacity: 0.8;
+}
+
+section {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gp-lg);
+}
+
+section h2 {
+  margin-top: var(--mg-xl);
+}
+
+section .wrapper {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  gap: var(--gp-md);
+  margin-bottom: var(--mg-xl);
+}
+
+section h3 {
+  margin-bottom: var(--mg-sm);
+}
+
+#services {
+  background-color: var(--bg-dark);
+  margin-top: var(--mg-lg);
+}
+
+.service {
+  padding: var(--pd-sm);
+}
+
+#team {
+  color: black;
+}
+
+#team h3 {
+  margin-bottom: 0;
+}
+
+#team img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+#contact-form {
+  color: black;
+  text-align: center;
+  padding: 0 var(--pd-md);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+#contact-form form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: var(--mg-xl);
+}
+
+#contact-form input,
+#contact-form textarea {
+  margin-bottom: var(--mg-lg);
+  border: none;
+  border-bottom: 1px solid;
+  outline: none;
+  padding: var(--pd-sm);
+  color: black;
+  font-size: 1.5rem;
+  resize: none;
+}
+
+#contact-form button {
+  font-size: 1.5rem;
+  padding: var(--pd-md);
+  background-color: white;
+  border: 1px solid;
+  cursor: pointer;
+}
+
+#contact-form button:hover {
+  background-color: var(--bg-dark);
+  color: white;
+}
+
+footer {
+  border-top: 1px solid;
+  padding: var(--pd-lg);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+p.title {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: var(--mg-sm);
+}
+
+.socials a {
+  display: inline-block;
+  margin-right: var(--mg-md);
+}
+
+.socials i {
+  font-size: 2rem;
+  color: black;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--gp-lg);
+    margin-bottom: var(--mg-lg);
+  }
+
+  .menu li {
+    font-size: 1.3rem;
+    margin-right: var(--mg-sm);
+  }
+
+  .hero {
+    min-height: 20vh;
+  }
+
+  .hero p {
+    font-size: 2rem;
+  }
+
+  .photo img {
+    width: 250px;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  footer p {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  footer .title {
+    font-size: 1.5rem;
+    margin-top: var(--mg-lg);
+  }
+
+  .socials a {
+    margin-right: var(--mg-lg);
+  }
+
+  section .wrapper {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 375px) {
+  .menu li {
+    font-size: 1.2rem;
+    margin-right: 0;
+  }
+}
