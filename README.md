@@ -16,4 +16,4 @@ A simple responsive website for a creative agency made with HTML/CSS.
 
 
 ## Credits
-[Brad Traversy](https://github.com/bradtraversy) **Modern HTML & CSS From The Beginning 2.0 course** on [Packtpub](https://www.packtpub.com/en-us/product/modern-html-css-from-the-beginning-20-9781835880562), [Traversy Media](https://www.traversymedia.com/modern-html-css-from-the-beginning) for project idea and needed assets to build the project.
+[Brad Traversy](https://github.com/bradtraversy) **Modern HTML & CSS From The Beginning 2.0 course** on [Packtpub](https://www.packtpub.com/en-us/product/modern-html-css-from-the-beginning-20-9781835880562), [Traversy Media](https://www.traversymedia.com/modern-html-css-from-the-beginning) for project idea and needed assets to build the website.
