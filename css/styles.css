@@ -38,7 +38,6 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* margin: var(--mg-md) var(--mg-lg); */
 }
 
 /* Navbar */
@@ -46,7 +45,7 @@ nav {
   display: flex;
   justify-content: space-around;
   padding: var(--pd-md);
-  margin-bottom: var(--mg-md);
+  margin: var(--mg-md) 0;
 }
 
 /* Logo */
