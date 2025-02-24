@@ -117,7 +117,7 @@ nav {
 }
 
 .photo {
-  width: calc(calc(1OO% / 3) - var(--gp-sm));
+  width: calc(calc(100% / 3) - var(--gp-sm));
 }
 
 .photo img {
